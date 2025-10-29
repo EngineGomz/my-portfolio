@@ -1,207 +1,1029 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Eugine Gomez - Experienced WordPress Developer specializing in creating responsive and user-friendly websites. Explore my portfolio to see my projects, experience, and skills.">
-    <meta name="keywords"
-        content="WordPress Developer, Web Developer, Portfolio, Responsive Websites, Eugine Gomez, Website Development">
+    <meta name="description" content="Eugine Gomez - Web Designer & Developer specializing in Figma, WordPress, and Shopify. 5 years in creating wordpress websites.">
+    <meta name="keywords" content="wordpress, figma , shopify, front-end developer, ui/ux designer">
     <meta name="author" content="Eugine Gomez">
-    <title>Eugine Gomez - WordPress Developer Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="canonical" href="https://www.euginegomezportfolio.com/">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Eugine Gomez - Web Designer & Developer">
+    <meta property="og:description" content="Creating clean, user-centered websites with modern design principles">
+    <meta property="og:type" content="website">
+    
+    <title>Eugine Gomez - Web Designer & Developer</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/eugine-gomez.png" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0 w-100 z-1">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Animated Background Elements -->
+    <div class="bg-elements" aria-hidden="true">
+        <!-- Grid Pattern -->
+        <div class="bg-grid"></div>
+        
+        <!-- Floating Particles -->
+        <div class="bg-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Animated Lines -->
+        <div class="bg-lines">
+            <div class="animated-line"></div>
+            <div class="animated-line"></div>
+            <div class="animated-line"></div>
+            <div class="animated-line"></div>
+        </div>
+        
+        <!-- Noise Texture -->
+        <div class="bg-noise"></div>
+    </div>
+    
+    <!-- Progress indicator -->
+    <div class="progress-bar" aria-hidden="true">
+        <div class="progress-fill"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <header class="header" id="header">
         <div class="container">
-            <a class="navbar-brand" href="#">Eugine Gomez</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <a href="#hero" class="logo" aria-label="Eugine Gomez - Home">
+                <span class="logo-text">Eugine Gomez</span>
+            </a>
+            
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="assets/Eugine Gomez - Resume.pdf" target="_blank" class="btn-resume" aria-label="Download Resume">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7,10 12,15 17,10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                   <p>Download Resume</p>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
             </div>
         </div>
+    </header>
+
+    <!-- Side Navigation Dots -->
+    <!-- <nav class="side-nav" aria-label="Quick navigation">
+        <ul>
+            <li><a href="#hero" class="side-nav-link active" aria-label="Hero section"><span class="tooltip">Home</span></a></li>
+            <li><a href="#about" class="side-nav-link" aria-label="About section"><span class="tooltip">About</span></a></li>
+            <li><a href="#services" class="side-nav-link" aria-label="Services section"><span class="tooltip">Skills</span></a></li>
+            <li><a href="#portfolio" class="side-nav-link" aria-label="Portfolio section"><span class="tooltip">Portfolio</span></a></li>
+            <li><a href="#experience" class="side-nav-link" aria-label="Experience section"><span class="tooltip">Experience</span></a></li>
+            <li><a href="#contact" class="side-nav-link" aria-label="Contact section"><span class="tooltip">Contact</span></a></li>
+        </ul>
     </nav> -->
 
-
-    <main>
-        <section id="about"
-            class="py-5 text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
             <div class="container">
-                <img src="https://enginegomz.github.io/github-portfolio/images/eugine-gomez.png" alt="Eugine Gomez"
-                    width="200" height="200" class="rounded-circle mb-4">
-                <h1 class="mb-2">Hi!, I'm Eugine Gomez</h1>
-                <p class="lead">Figma to WordPress Specialist</p>
-                <p class="lead">What I Do? I specialize in converting precise and pixel-perfect website layouts from Figma into functional and fully responsive WordPress websites using Elementor Page Builder.
-
-Whether it’s a landing page, corporate site, or eCommerce layout, I ensure that the final WordPress build reflects the original Figma design flawlessly. I also offer theme customization, responsive fixes, and integration of other page builders when needed (such as WPBakery or Beaver Builder).</p>
-                    <a class="btn btn-primary mt-3" href="#skills">Portfolio Highlights</a>
-            </div>
-        </section>
-        <section id="skills" class="py-5 bg-light vh-100 d-flex flex-column justify-content-center align-items-center">
-            <div class="container">
-                <h2 class="mb-5 text-center">Figma to WordPress Specialist Skills</h2>
-                <div class="row">
-                    <div class="col-md-3 text-center ">
-                        <span class="badge bg-secondary fs-4 mb-1">WordPress</span>
-                        <span class="badge bg-secondary fs-4 mb-1">HTML5</span>
-                        <span class="badge bg-secondary fs-4 mb-1">CSS3</span>
-                        <span class="badge bg-secondary fs-4 mb-1">JavaScript</span>
-                        <span class="badge bg-secondary fs-4 mb-1">jQuery</span>
-                        <span class="badge bg-secondary fs-4 mb-1">PHP</span>
-                    </div>
-                    <div class="col-md-3 text-center ">
-                        <span class="badge bg-secondary fs-4 mb-1">UI/UX Designer</span>
-                        <span class="badge bg-secondary fs-4 mb-1">Photoshop</span>
-                        <span class="badge bg-secondary fs-4 mb-1">Figma</span>
-                    </div>
-                    <div class="col-md-3 text-center ">
-                        <span class="badge bg-secondary fs-4 mb-1">Basic SEO</span>
-                        <span class="badge bg-secondary fs-4 mb-1">Google Analytics</span>
-                        <span class="badge bg-secondary fs-4 mb-1">Web Accessibility</span>
-                    </div>
-                    <div class="col-md-3 text-center ">
-                        <span class="badge bg-secondary fs-4 mb-1">Web Performance</span>
-                        <span class="badge bg-secondary fs-4 mb-1">Responsive Design</span>
-                        <span class="badge bg-secondary fs-4 mb-1">Version Git</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center mt-4">
-                        <a class="btn btn-primary mt-3" href="#skills">Tools & Skills</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="experience"
-            class="py-5 bg-light vh-100 d-flex flex-column justify-content-center align-items-center">
-
-
-            <div class="container">
-                <h2 class="mb-5 text-center">Websites Worked and Deployed</h2>
-                <p class="text-center">I have worked on various projects, each tailored to meet specific client needs.
-                    Below are some of the notable websites I have developed with collaboration.</p>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Digital Agency Based in Europe, Malta</h5>
-                                <p><strong>Role:</strong> Web Developer (Wordpress)</p>
-                                <p><strong>Duration:</strong> November 2020 - August 2023</p>
-                                <p>Developed and maintained over 12 websites, focusing on responsive design and
-                                    performance optimization. Notable projects include:</p>
-                                <ul>
-                                    <li><a href="https://franksalt.com.mt/" target="_blank">franksalt.com.mt</a></li>
-                                    <li><a href="https://mood.mt" target="_blank">mood.mt</a></li>
-                                    <li><a href="https://jamescaterers.com/" target="_blank">jamescaterers.com</a></li>
-                                </ul>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <h1 class="hero-title">
+                            <span class="name">Eugine Gomez</span>
+                            <span class="role">WordPress Developer</span>
+                        </h1>
+                        <p class="hero-description">
+                            I design and develop user-centered websites that balance aesthetics and performance. Backed by 5 years of interpreting Figma designs into WordPress Websites, I deliver solutions that convert and perform flawlessly.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects Completed</span>
                             </div>
+                            <div class="stat">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <!-- <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div> -->
+                        </div>
+                        <div class="hero-actions">
+                            <a href="#portfolio" class="btn btn-primary">View My Portfolio</a>
+                            <a href="#skills" class="btn btn-outline">My Skills</a>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">BrandRep - USA, California</h5>
-                                <p><strong>Role:</strong> WordPress Developer</p>
-                                <p><strong>Duration:</strong> November 2023 - July 2024</p>
-                                <p>Successfully launched over 20 websites tailored to client needs. Key projects
-                                    include:</p>
-                                <ul>
-                                    <li><a href="https://prycelessjamaicantours.com/"
-                                            target="_blank">prycelessjamaicantours.com</a></li>
-                                    <li><a href="https://sandtosearealestateca.com/"
-                                            target="_blank">sandtosearealestateca.com</a></li>
-                                    <li><a href="https://www.effroofingrestoration.com/"
-                                            target="_blank">effroofingrestoration.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">OceanStudio360 - USA, California</h5>
-                                <p><strong>Role:</strong> WordPress Developer</p>
-                                <p><strong>Duration:</strong> April 2024 - Present</p>
-                                <p>Specializing in custom WordPress solutions, I have delivered impactful websites,
-                                    including:</p>
-                                <ul>
-                                    <li><a href="https://sensytec.com/" target="_blank">sensytec.com</a></li>
-                                    <li><a href="https://oceanstudio360.com/" target="_blank">oceanstudio360.com</a>
-                                    </li>
-                                    <li><a href="https://lighthousepsychiatry.com/"
-                                            target="_blank">lighthousepsychiatry.com</a></li>
-                                </ul>
-                            </div>
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <img src="assets/me.png" alt="Eugine Gomez - Web Designer and Developer" loading="eager">
+                            <div class="image-backdrop"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="py-5 vh-100 d-flex flex-column justify-content-center align-items-center">
+        <!-- About Section -->
+        <section class="about" id="about">
             <div class="container">
-                <h2 class="text-center">Education</h2>
-                <p><strong>Bachelor of Science in Information Technology</strong> - 2020</p>
-                <p>Davao del Norte State College, Panabo City, Davao del Norte, Philippines</p>
+                <div class="section-header">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">Building User-Centered Websites That Turn Visitors Into Customers</h2>
+                    <p class="section-description">
+                       Experienced web designer and developer with 5 years of proven expertise in creating visually appealing, results-oriented websites.
+                    </p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-info">
+                        <div class="info-card">
+                            <div class="info-header">
+                                <div class="profile-badge">
+                                    <img src="assets/eugine-gomez.png" alt="Eugine Gomez" class="profile-image">
+                                    <!-- <div class="status-indicator"></div> -->
+                                </div>
+                                <div class="profile-details">
+                                    <h3>Eugine Gomez</h3>
+                                    <p class="profile-role">Web Designer & Developer</p>
+                                    <div class="profile-meta">
+                                        <span>Panabo City, Davao del Norte, Philippines</span>
+                                        <span>BS Information Technology</span>
+                                        <span>Davao Del Norte State College</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skills-preview">
+                                <h4>Core Expertise</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Web Design</span>
+                                    <span class="skill-tag">WordPress</span>
+                                    <!-- <span class="skill-tag">Shopify</span> -->
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Elementor</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">UI/UX</span>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="quick-facts">
+                                <div class="fact">
+                                    <span class="fact-label">Projects Completed</span>
+                                    <span class="fact-value">4+</span>
+                                </div>
+                                <div class="fact">
+                                    <span class="fact-label">Happy Clients</span>
+                                    <span class="fact-value">100%</span>
+                                </div>
+                                <div class="fact">
+                                    <span class="fact-label">Response Time</span>
+                                    <span class="fact-value">&lt; 24h</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="detail-tabs">
+                            <button class="tab-btn active" data-tab="overview">Overview</button>
+                            <button class="tab-btn" data-tab="skills">Skills</button>
+                            <button class="tab-btn" data-tab="certifications">Certifications</button>
+                        </div>
+                        
+                        <div class="tab-content active" data-content="overview">
+                            <h4>My Journey</h4>
+                            <p>
+                                Graduate with a BS in Information Technology Degree, I discovered early that my strength isn’t just building websites—it’s building websites that help businesses grow. Starting from the basics of web development, I’ve specialized in Shopify and WordPress, focusing on e-commerce design that blends aesthetics with sales conversion.
+                            </p>
+                            <p>
+                                What sets me apart is my strong understanding of how business works and how design influences buying decisions. I don’t just design for looks—I design with purpose, creating user-friendly, responsive, and conversion-focused experiences that turn visitors into loyal customers.
+                            </p>
+                            <ul class="feature-list">
+                                <li>✨ Business-driven design mindset</li>
+                                <li>🚀 Conversion-focused e-commerce development</li>
+                                <li>📱 Mobile-first responsive design</li>
+                                <li>♿ Accessibility-focused implementation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-content" data-content="skills">
+                            <h4>Technical Skills</h4>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h5>Design</h5>
+                                    <div class="skill-items">
+                                        <div class="skill-item">
+                                            <span class="skill-name">Figma</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">UI/UX Design</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h5>Development</h5>
+                                    <div class="skill-items">
+                                        <div class="skill-item">
+                                            <span class="skill-name">HTML/CSS</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">JavaScript</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 75%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-category">
+                                    <h5>Platforms</h5>
+                                    <div class="skill-items">
+                                        <div class="skill-item">
+                                            <span class="skill-name">WordPress</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 80%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Shopify</span>
+                                            <div class="skill-bar">
+                                                <div class="skill-progress" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" data-content="certifications">
+                            <h4>Professional Certifications</h4>
+                            <div class="cert-list">
+                                <div class="cert-item">
+                                    <div class="cert-icon">
+                                        <img src="assets/htmlcss.png" alt="HTML & CSS Certificate" class="cert-thumbnail">
+                                    </div>
+                                    <div class="cert-details">
+                                        <h5>Google UX Design Professional . October 2024</h5>
+                                        
+                                        <p>Foundations of User Experience (UX) Design</p>
+                                        <div class="cert-actions ">
+                                            <button class="cert-btn cert-view-btn" data-modal="cert-modal" data-cert-image="assets/html_css_certification.jpg" data-cert-title="Google UX Design Professional">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                    <circle cx="12" cy="12" r="3"/>
+                                                </svg>
+                                                View Certificate
+                                            </button>
+                                            <a href="https://www.coursera.org/account/accomplishments/records/3ZM9HQ4KWRGU" target="_blank" class="cert-btn cert-link-btn">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                                    <polyline points="15,3 21,3 21,9"/>
+                                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                                </svg>
+                                                Verify Online
+                                            </a>
+                                        </div>
+                                        <p>Start the UX Design Process: Empathize, Define, and Ideate</p>
+                                        <div class="cert-actions">
+                                            <button class="cert-btn cert-view-btn" data-modal="cert-modal" data-cert-image="assets/html_css_certification.jpg" data-cert-title="Google UX Design Professional">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                    <circle cx="12" cy="12" r="3"/>
+                                                </svg>
+                                                View Certificate
+                                            </button>
+                                            <a href="https://www.credly.com/badges/523a6e9b-288f-4d94-a5d8-9e1b1c4051f7/linked_in_profile" target="_blank" class="cert-btn cert-link-btn">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                                    <polyline points="15,3 21,3 21,9"/>
+                                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                                </svg>
+                                                Verify Online
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-icon">
+                                        <img src="assets/htmlcss.png" alt="HTML & CSS Certificate" class="cert-thumbnail">
+                                    </div>
+                                    <div class="cert-details">
+                                        <h5>Google UX Design Professional</h5>
+                                        <p>Foundations of User Experience (UX) Design</p>
+                                        <div class="cert-actions">
+                                            <button class="cert-btn cert-view-btn" data-modal="cert-modal" data-cert-image="assets/html_css_certification.jpg" data-cert-title="Google UX Design Professional">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                    <circle cx="12" cy="12" r="3"/>
+                                                </svg>
+                                                View Certificate
+                                            </button>
+                                            <a href="https://www.credly.com/badges/523a6e9b-288f-4d94-a5d8-9e1b1c4051f7/linked_in_profile" target="_blank" class="cert-btn cert-link-btn">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                                    <polyline points="15,3 21,3 21,9"/>
+                                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                                </svg>
+                                                Verify Online
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- <div class="cert-item">
+                                    <div class="cert-icon">
+                                        <img src="assets/pmi.png" alt="PMI Certificate" class="cert-thumbnail">
+                                    </div>
+                                    <div class="cert-details">
+                                        <h5>PMI Project Management Ready™</h5>
+                                        <p>Certiport • March 2025</p>
+                                        <div class="cert-actions">
+                                            <button class="cert-btn cert-view-btn" data-modal="cert-modal" data-cert-image="assets/pmi_certification.jpg" data-cert-title="PMI Project Management Ready™ Certificate">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                    <circle cx="12" cy="12" r="3"/>
+                                                </svg>
+                                                View Certificate
+                                            </button>
+                                            <a href="https://www.credly.com/badges/e65d4ade-ca3b-466f-b17b-b6c698367e4c/linked_in_profile" target="_blank" class="cert-btn cert-link-btn">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                                    <polyline points="15,3 21,3 21,9"/>
+                                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                                </svg>
+                                                Verify Online
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-icon">
+                                        <img src="assets/ITS-Badges-Cybersecurity.png" alt="Cybersecurity Certificate" class="cert-thumbnail">
+                                    </div>
+                                    <div class="cert-details">
+                                        <h5>IT Specialist - Cybersecurity</h5>
+                                        <p>Certiport • June 2025</p>
+                                        <div class="cert-actions">
+                                            <button class="cert-btn cert-view-btn" data-modal="cert-modal" data-cert-image="assets/cybersecurity_certification.jpg" data-cert-title="IT Specialist - Cybersecurity Certificate">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                    <circle cx="12" cy="12" r="3"/>
+                                                </svg>
+                                                View Certificate
+                                            </button>
+                                            <a href="https://www.credly.com/badges/904519c3-f431-48b6-b128-0068870b2b54/linked_in_profile" target="_blank" class="cert-btn cert-link-btn">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                                    <polyline points="15,3 21,3 21,9"/>
+                                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                                </svg>
+                                                Verify Online
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <h2>Webinars</h2>
-                <p><strong>Google UX Design Professional Certificate</strong></p>
-                <p>Host: DTI Davao Del Norte-Davao Del Sur-Davao partnered with Coursera</p>
-                <ul>
-                    <li></li>
-                </ul>
-                <br>
-                <p><strong>WEB ACCESSIBILITY AUDIT ONLINE TRAINING</strong></p>
-                <p>Host: DICT Davao De Oro Provincial Office</p>
-            </div>
-
         </section>
 
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Skills</span>
+                    <h2 class="section-title">What I Can Do</h2>
+                    <p class="section-description">
+                        I design and develop websites with a balance of creativity and functionality—building user-friendly, responsive, and effective digital experiences.
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/figma-logo.png" alt="Web Design Service" class="service-icon-img">
+                        </div>
+                        <h3>Interpreting Figma Designs</h3>
+                        <p>I begin by analyzing the Figma design layout to understand the visual hierarchy, color palette, typography, and user flow. I inspect each component, spacing, and interaction detail to ensure a pixel-perfect conversion. I also assess responsiveness by checking desktop, tablet, and mobile frames, preparing design assets (images, icons, SVGs), and organizing content structure for clean implementation.</p>
+                        <ul class="service-features">
+                            <li>Visual hierarchy & layout analysis</li>
+                            <li>Color palette & typography consistency</li>
+                            <li>Component inspection (buttons, forms, icons)</li>
+                            <li>Spacing & alignment precision</li>
+                            <li>Responsive frame review (desktop, tablet, mobile)</li>
+                            <li>Asset extraction (SVGs, images, icons)</li>
+                            <li>Interaction & animation reference</li>
+                            <li>Content structure mapping</li>
+                            <li>Accessibility consideration</li>
+                            <li>Preparing style guide for development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/WordPress_blue_logo.svg.png" alt="WordPress Development Service" class="service-icon-img">
+                        </div>
+                        <h3>Developing in WordPress</h3>
+                        <p>Using Elementor or custom theme development, I translate the Figma layout into a fully functional WordPress website. I recreate each section with precision, ensuring consistent typography, responsive layouts, and optimized performance. I integrate dynamic content, custom post types, and user-friendly admin options—balancing aesthetics and usability for a seamless editing experience.</p>
+                        <ul class="service-features">
+                            <li>Elementor page building & theme customization</li>
+                            <li>Pixel-perfect layout recreation</li>
+                            <li>Responsive design implementation</li>
+                            <li>Custom post types & taxonomies</li>
+                            <li>ACF (Advanced Custom Fields) integration</li>
+                            <li>Dynamic content setup</li>
+                            <li>WooCommerce or plugin integration</li>
+                            <li>Website speed & SEO optimization</li>
+                            <li>Cross-browser compatibility testing</li>
+                            <li>User-friendly dashboard & editing flow</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/Shopify.png" alt="Shopify Development Service" class="service-icon-img">
+                        </div>
+                        <h3>Shopify Development</h3>
+                        <p>Creating high-converting e-commerce stores with custom features, payment integration, and inventory management.</p>
+                        <ul class="service-features">
+                            <li>Store Setup & Design</li>
+                            <li>Custom Features</li>
+                            <li>Payment Integration</li>
+                            <li>Conversion Optimization</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="section-title">Featured Work</h2>
+                    <p class="section-description">
+                        A showcase of recent projects that demonstrate my approach to user-centered design and development.
+                    </p>
+                </div>
+                
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="wordpress">WordPress</button>
+                    <button class="filter-btn" data-filter="design">Own Design</button>
+                    <!-- <button class="filter-btn" data-filter="shopify">Shopify</button> -->
+                </div>
+                
+                <div class="portfolio-grid">
+                    <!-- Featured Shopify Project - Klued -->
+                    <div class="portfolio-item featured" data-category="wordpress">
+                        <div class="portfolio-image">
+                            <img src="assets/Lilo.png" alt="Franksalt" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="btn btn-sm btn-primary" data-modal="franksalt-modal">View Details</button>
+                                    <a href="https://liloactive.shop/" target="_blank" class="btn btn-sm btn-outline">Live Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-category">Wordpress</span>
+                                <!-- <span class="portfolio-featured">Featured Project</span> -->
+                            </div>
+                            <h3>Franksalt</h3>
+                            <p>Real State platform </p>
+                            <div class="portfolio-tags">
+                                <span class="tag">WordPress</span>
+                                <span class="tag">Woocommerce</span>
+                                <span class="tag">Responsive</span>
+                                <span class="tag">3rd Party API</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Featured Shopify Project - Klued -->
+                    <div class="portfolio-item featured" data-category="wordpress">
+                        <div class="portfolio-image">
+                            <img src="assets/After.png" alt="Klued Skincare Shopify Store" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="btn btn-sm btn-primary" data-modal="shopify-modal">View Details</button>
+                                    <a href="https://www.kluedskincare.com/" target="_blank" class="btn btn-sm btn-outline">Live Site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="portfolio-category">Shopify </span>
+                                <span class="portfolio-featured">Featured Project</span>
+                            </div>
+                            <h3>Klued Skincare Store</h3>
+                            <p>Complete Shopify store redesign focusing on user experience, conversion optimization, and brand consistency.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Shopify</span>
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">CRO</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- Design Projects Grid - ADD TAGS TO EXISTING ITEMS -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="FigmaProjects/Jacket.png" alt="Jacket Landing Page Design" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="btn btn-sm btn-primary" data-modal="design-modal" data-image="FigmaProjects/Jacket.png">View Design</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Web Design</span>
+                            <h3>Jacket Brand Landing</h3>
+                            <p>Modern landing page design with bold visuals and conversion-focused layout.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Landing Page</span>
+                                <span class="tag">Fashion</span>
+                                <span class="tag">UI Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="FigmaProjects/Trendora-EcommerceLandingPage.png" alt="Trendora E-commerce Design" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="btn btn-sm btn-primary" data-modal="design-modal" data-image="FigmaProjects/Trendora-EcommerceLandingPage.png">View Design</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Web Design</span>
+                            <h3>Trendora E-commerce</h3>
+                            <p>Clean e-commerce landing page focused on product showcase and user experience.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">UX Design</span>
+                                <span class="tag">Mobile-First</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="FigmaProjects/InstaCareThesisRedesign.png" alt="InstaCare Landing Page" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="btn btn-sm btn-primary" data-modal="design-modal" data-image="FigmaProjects/InstaCareThesisRedesign.png">View Design</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Web Design</span>
+                            <h3>InstaCare Redesign</h3>
+                            <p>Healthcare platform redesign emphasizing trust, accessibility, and user flow.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Healthcare</span>
+                                <span class="tag">Accessibility</span>
+                                <span class="tag">Redesign</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <!-- <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="FigmaProjects/CourseSystem.png" alt="Course System SaaS Design" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="btn btn-sm btn-primary" data-modal="design-modal" data-image="FigmaProjects/CourseSystem.png">View Design</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Web Design</span>
+                            <h3>Course Management SaaS</h3>
+                            <p>Educational platform interface design with focus on usability and engagement.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">SaaS</span>
+                                <span class="tag">Education</span>
+                                <span class="tag">Dashboard</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <!-- <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="FigmaProjects/CardanoNFTWebDesign.png" alt="Web3 NFT Landing Page" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="btn btn-sm btn-primary" data-modal="design-modal" data-image="FigmaProjects/CardanoNFTWebDesign.png">View Design</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Web Design</span>
+                            <h3>Web3 NFT Platform</h3>
+                            <p>Modern Web3 landing page with immersive visuals and clear call-to-actions.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Web3</span>
+                                <span class="tag">NFT</span>
+                                <span class="tag">Crypto</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <!-- <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="FigmaProjects/GymWebDesign.png" alt="Gym Website Design" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="btn btn-sm btn-primary" data-modal="design-modal" data-image="FigmaProjects/GymWebDesign.png">View Design</button>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Web Design</span>
+                            <h3>Fitness Center Website</h3>
+                            <p>Energetic gym website design promoting membership and community engagement.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Fitness</span>
+                                <span class="tag">Membership</span>
+                                <span class="tag">Branding</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Experience</span>
+                    <h2 class="section-title">Professional Journey</h2>
+                    <p class="section-description">
+                        My professional growth from intern to freelance web designer, showcasing hands-on experience in web development, IT support, and Shopify development.
+                    </p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item codebility">
+                        <!-- <div class="timeline-marker"></div> -->
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Wordpress Developer </h3>
+                                <span class="timeline-period">September 2025 - Present</span>
+                            </div>
+                            <p class="timeline-company">Codebility</p>
+                            <p>Currently join as a freelance wordpress developer, designing and maintaining responsive, user-friendly web pages. Creating layouts and landing pages aligned with brand identity while collaborating with teams to improve UX and website performance. Implementing basic SEO strategies and conversion rate optimization (CRO) with a continued focus on enhancing user experience.</p>
+                            <div class="timeline-skills">
+                                <span class="skill-pill">Web Development</span>
+                                <span class="skill-pill">WordPress</span>
+                                <span class="skill-pill">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item oceanstudio360">
+                        <!-- <div class="timeline-marker"></div> -->
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>WordPress Developer</h3>
+                                <span class="timeline-period">April 2024 - December 2024</span>
+                            </div>
+                            <p class="timeline-company">OceanStudio360</p>
+                            <p>Start up company</p>
+                            <div class="timeline-skills">
+                                <span class="skill-pill">WordPress</span>
+                                <span class="skill-pill">SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item brandrep">
+                        <!-- <div class="timeline-marker"></div> -->
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>WordPress Developer</h3>
+                                <span class="timeline-period">November 2023 - April 2024</span>
+                            </div>
+                            <p class="timeline-company">BrandRep</p>
+                            <p>Interpreting Business content into wordpress sites</p>
+                            <ul>
+                                <li>Built templated WordPress sites by adapting business content from writers and designers.</li>
+                                <li>Ensured consistency across client websites with SEO-ready structures.</li>
+                            </ul>
+                            <div class="timeline-skills">
+                                <span class="skill-pill">Figma</span>
+                                <span class="skill-pill">Business Content</span>
+                                <span class="skill-pill">WordPress</span>
+                                <span class="skill-pill">Elementor Templates</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item born">
+                        <!-- <div class="timeline-marker"></div> -->
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>WordPress Technical Support</h3>
+                                <span class="timeline-period">November 2020 - August 2023</span>
+                            </div>
+                            <p class="timeline-company">BORN Digital - WebeeLabs ltd.</p>
+                            <p>Started my professional journey by simultaneously providing technical support for Wordpress development</p>
+                            <ul>
+                                <li>Convert Figma, Adobe XD, InVision, and Photoshop designs WordPress website using Elementor page builder and custom theming.</li>
+                                <li>Maintaining client sites and supporting design-to-development workflows.</li>
+                                <li>Support technical and deployment. Chasing errors and bugs</li>
+                            </ul>
+                            <p>Training as Infrastructure Engineer focus on Azure & DevOps Operations</p>
+                            <ul>
+                                <li>Determine </li>
+                            </ul>
+                            <div class="timeline-skills">
+                                <span class="skill-pill">Technical Support</span>
+                                <span class="skill-pill">Wordpress</span>
+                                <span class="skill-pill">Custom Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <!-- <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="section-description">
+                        Ready to bring your vision to life? Get in touch and let's discuss how I can help with your next project.
+                    </p>
+                </div>
+                
+                <div class="contact-content"> -->
+                    
+                    
+                    <!-- <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a service</option>
+                                    <option value="web-design">Web Design</option>
+                                    <option value="wordpress">WordPress Development</option>
+                                    <option value="shopify">Shopify Development</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div> -->
+                <!-- </div>
+            </div>
+        </section> -->
     </main>
 
-    <footer class=" py-4 bg-dark text-white ">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>Contact</h3>
-                    <ul class="list-unstyled" id="contact">
-                        <li><strong>Phone:</strong> <a href="tel:+639266779935">(+63) 926 677 9935</a></li>
-                        <li><strong>Email:</strong> <a href="mailto:engine.gomz@gmail.com">engine.gomz@gmail.com</a>
-                        </li>
-                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/eugine-gomez-9b1b952b7/"
-                                target="_blank">linkedin.com/in/eugine-gomez</a></li>
-                        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/gomezeugine"
-                                target="_blank">facebook.com/gomezeugine</a></li>
-                        <li><strong>Address:</strong> Panabo City, Davao del Norte, Philippines</li>
-                    </ul>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Eugine Gomez</h3>
+                    <p>Building digital experiences that are inspiring, functional, and built to perform.</p>
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <!-- <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div> -->
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+639266779935" class="contact-link">+639266779935</a>
+                                <!-- <a href="tel:+639266779935" class="contact-link">Call Now</a> -->
+                            </div>
+                        <!-- </div>
+                        
+                        <div class="contact-card"> -->
+                            <!-- <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div> -->
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:engine.gomz@gmail.com" class="contact-link">engine.gomz@gmail.com</a>
+                                <!-- <a href="mailto:engine.gomz@gmail.com" class="contact-link">Send Email</a> -->
+                            </div>
+                        <!-- </div>
+                        
+                        <div class="contact-card"> -->
+                            <!-- <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </div> -->
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/enginegomz/" target="_blank" class="contact-link">euginegomez</a>
+                                <!-- <a href="https://www.linkedin.com/in/nathanielarcega/" target="_blank" class="contact-link">Connect</a> -->
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="social-links">
+                            <a href="https://www.linkedin.com/in/enginegomz" target="_blank" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:engine.gomz@gmail.com" aria-label="Email">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                            <a href="tel:+639266779935" aria-label="Phone">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Design</a></li>
+                            <li><a href="#services">WordPress</a></li>
+                            <li><a href="#services">Shopify</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="assets/Eugine Gomez - Resume.pdf" target="_blank" download>Resume</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>&copy; 2024 Eugine Gomez. All Rights Reserved.</p>
-                </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eugine Gomez. All rights reserved.</p>
+                <!-- <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div> -->
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" id="backToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18,15 12,9 6,15"/>
+        </svg>
+    </button>
+
+    <!-- Modals -->
+    <div class="modal" id="design-modal">
+        <div class="modal-overlay" data-modal-close></div>
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <img class="modal-image" src="#" alt="Design Preview">
+        </div>
+    </div>
+
+    <div class="modal" id="shopify-modal">
+        <div class="modal-overlay" data-modal_close></div>
+        <div class="modal-content">
+            <button class="modal-close" data-modal_close>&times;</button>
+            <div class="modal-body">
+                <h2>Klued Skincare Store Redesign</h2>
+                <p>Complete Shopify store transformation focusing on user experience, conversion optimization, and brand consistency. The project included custom theme development, product showcase optimization, and performance improvements.</p>
+                <div class="before-after">
+                    <div class="comparison-item">
+                        <img src="assets/before.jpg" alt="Before redesign">
+                        <span class="comparison-label">Before</span>
+                    </div>
+                    <div class="comparison-item">
+                        <img src="assets/After.png" alt="After redesign">
+                        <span class="comparison-label">After</span>
+                    </div>
+                </div>
+                <a href="https://www.kluedskincare.com/" target="_blank" class="btn btn-primary">Visit Live Site</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div class="modal" id="cert-modal">
+        <div class="modal-overlay" data-modal-close></div>
+        <div class="modal-content cert-modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <div class="cert-modal-body">
+                <h2 class="cert-modal-title">Certificate Title</h2>
+                <div class="cert-modal-image-wrapper">
+                    <img class="cert-modal-image" src="#" alt="Certificate">
+                </div>
+                <div class="cert-modal-actions">
+                    <button class="btn btn-outline" data-modal-close>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Franksalt Modal -->
+    <div class="modal" id="franksalt-modal">
+        <div class="modal-overlay" data-modal-close></div>
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close>&times;</button>
+            <div class="modal-body">
+                <h2>Franksalt</h2>
+                <p>Complete </p>
+                <a href="https://franksalt.com.mt/" target="_blank" class="btn btn-primary">Visit Live Site</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
+
+
