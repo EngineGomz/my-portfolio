@@ -947,7 +947,7 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 0.8em;
+  font-size: 0.4em;
   margin-top: var(--space-2);
   min-height: 1.2em; /* Prevent layout shift */
   line-height: 1.2;
@@ -1823,7 +1823,9 @@ section {
   align-items: start;
   padding: var(--space-16) 0;
 }
-
+.footer-info{
+  padding-right: var(--space-24);
+}
 .footer-info h3 {
   color: var(--text-primary);
   margin-bottom: var(--space-3);
