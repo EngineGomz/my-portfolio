@@ -947,7 +947,7 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 0.4em;
+  font-size: 0.2em;
   margin-top: var(--space-2);
   min-height: 1.2em; /* Prevent layout shift */
   line-height: 1.2;
