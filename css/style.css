@@ -953,7 +953,7 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 0.2em;
+  font-size: 0.4em;
   margin-top: var(--space-2);
   min-height: 1.2em; /* Prevent layout shift */
   line-height: 1.2;
@@ -1322,7 +1322,8 @@ section {
   color: var(--text-muted);
   margin: 0 0 var(--space-2) 0;
 }
-.cert-details p a{
+.cert-details p a,
+.cert-details p strong{
   color: var(--primary-color);
 }
 .cert-details p a:hover{
