@@ -384,11 +384,13 @@ body {
   z-index: 1;
 }
 
-.experience {
+.experience ,
+.case-study{
   position: relative;
 }
 
-.experience::before {
+.experience::before ,
+.case-study::before{
   content: '';
   position: absolute;
   top: 0;
@@ -402,7 +404,8 @@ body {
   z-index: 0;
 }
 
-.experience .container {
+.experience .container, 
+.case-study .container{
   position: relative;
   z-index: 1;
 }
