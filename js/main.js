@@ -459,7 +459,7 @@ class ModernPortfolio {
     });
     
     // RESTORE TYPING ANIMATION
-    this.initTypingAnimation();
+    // this.initTypingAnimation();
   }
   
   // ===== TYPING ANIMATION (RESTORED) =====
