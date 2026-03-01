@@ -164,7 +164,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
 }
-
+.hide{
+  display: none;
+}
 /* ===== ANIMATED BACKGROUND ELEMENTS ===== */
 .bg-elements {
   position: fixed;
